@@ -1,5 +1,6 @@
 import { supabase } from '$lib/supabaseClient';
-import { Document, Packer, Paragraph, TextRun } from 'docx';
+import docx from 'docx';
+const { Document, Packer, Paragraph, TextRun } = docx;
 import { RequestHandler } from '@sveltejs/kit';
 
 export const POST: RequestHandler = async ({ request }) => {
