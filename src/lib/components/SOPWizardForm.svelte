@@ -54,7 +54,7 @@
 </script>
 
 <!-- Form -->
-<form on:submit|preventDefault={submitForm} class="w-full max-w-lg">
+<form on:submit|preventDefault={submitForm} class="">
   <!-- Title -->
   <div class="mb-4">
     <label for="title" class="block text-gray-700 text-sm font-bold mb-2">Title:</label>

@@ -1,11 +1,16 @@
-import { defineConfig } from 'vite';
 import { sveltekit } from '@sveltejs/kit/vite';
 
-export default defineConfig({
+/** @type {import('vite').UserConfig} */
+const config = {
 	plugins: [sveltekit()],
 	build: {
 		rollupOptions: {
-			external: ['docx'], // externalize docx for server-side
-		},
+			external: ['docx'] // externalize docx for server-side
+		}
 	},
-});
+	test: {
+		include: ['src/**/*.{test,spec}.{js,ts}']
+	}
+};
+
+export default config;
